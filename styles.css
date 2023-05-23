@@ -1,3 +1,20 @@
 * {
   border: blue solid 2px;
 }
+
+body,
+.main-header-container,
+.main-header-info,
+.main-header-sub-info,
+.graphs-container {
+  display: flex;
+}
+
+.main-header-info {
+  flex-direction: column;
+}
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+}

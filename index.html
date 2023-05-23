@@ -7,14 +7,14 @@
     <title>Rachel's Static Comp</title>
   </head>
   <body>
-    <aside>
+    <nav>
       <section class="user">
         <img>
         <p>User Name Here</p>
       </section>
-      <section class="side-nav">
+      <section class="side-nav-container">
         <p>Main</p>
-        <div class="side-buttons">
+        <div class="side-buttons-container">
           <button>HOME</button>
           <button>JOBS</button>
           <button>RESUMES</button>
@@ -22,9 +22,9 @@
           <button>CALENDAR</button>
         </div>
       </section>
-      <section class="side-nav">
+      <section class="side-nav-container">
         <p>Admin</p>
-        <div class="side-buttons">
+        <div class="side-buttons-container">
           <button>USERS</button>
           <button>LOCATIONS</button>
           <button>WORKFLOWS</button>
@@ -32,9 +32,9 @@
           <button>SOCIAL</button>
         </div>
       </section>
-      <section class="side-nav">
+      <section class="side-nav-container">
         <p>Categories</p>
-        <div class="side-checkboxes">
+        <div class="side-checkbox-container">
           <div class="checkbox">
             <input type="checkbox" name="admin-category">
             <label for="admin-category">Administrative</label>
@@ -53,13 +53,70 @@
           </div>
         </div>
       </section>
-    </aside>
+    </nav>
     <main>
-      <header class="">
-        
-      </header>
-      <section class="">
-
+      <nav class="top-nav">
+        <button class="top-nav-button">icon, menu expander</button>
+        <input type="search" placeholder="Search for a job, task, or resume">
+        <button class="top-nav-button">icon,  add person?</button>
+        <button class="top-nav-button">icon, calendar</button>
+        <button class="top-nav-button">icon, squares</button>
+      </nav>
+      <section class="main-body-container">
+        <header>
+          <div class="main-header-container">
+            <div class="main-header-info">
+              <h1>Job Title</h1>
+              <div class="main-header-sub-info">
+                <p>location</p>
+                <a href="none">link here</a>
+              </div>
+            </div>
+            <div class="main-header-buttons">
+              <button>open/closed</button>
+              <button>bookmark</button>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav">
+              <li>SUMMARY</li>
+              <li>APPLICANTS</li>
+              <li>JOB BOARD</li>
+              <li>INTERVIEWS</li>
+              <li>ACTIVITY</li>
+              <li>BROADCAST</li>
+              <li>NOTIFICATIONS</li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+      <section>
+        <section class="graphs-container">
+          <div class="figure-1">
+            <figure>
+              graph 1 here
+            </figure>
+            <figcaption>graph 2 caption</figcaption>
+          </div>
+          <div class="figure-2">
+            <figure>
+              graph 1 here
+            </figure>
+            <figcaption>graph 2 caption</figcaption>
+          </div>
+        </section>
+        <section class="main-content-container">
+          <section class="content">
+            
+          </section>
+          <aside class="tools">
+            <article class="social-media-container">
+              <button class="social-media-button"></button>
+            </article>
+          </aside>
+        </section>
       </section>
     </main>
   </body>
