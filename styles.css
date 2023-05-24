@@ -3,14 +3,20 @@
 }
 
 body,
+.side-buttons-container,
 .main-header-container,
 .main-header-info,
 .main-header-sub-info,
-.graphs-container {
+.graphs-container,
+.main-content-container,
+.content-subsection,
+.social-media-container {
   display: flex;
 }
 
-.main-header-info {
+.side-buttons-container,
+.main-header-info,
+.social-media-container {
   flex-direction: column;
 }
 
