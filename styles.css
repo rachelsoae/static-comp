@@ -1,0 +1,26 @@
+* {
+  border: blue solid 2px;
+}
+
+body,
+.side-buttons-container,
+.main-header-container,
+.main-header-info,
+.main-header-sub-info,
+.graphs-container,
+.main-content-container,
+.content-subsection,
+.social-media-container {
+  display: flex;
+}
+
+.side-buttons-container,
+.main-header-info,
+.social-media-container {
+  flex-direction: column;
+}
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+}
