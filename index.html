@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Rachel's Static Comp</title>
   </head>
   <body>
@@ -13,6 +16,7 @@
         <p class="user-name">Newton Barley</p>
       </section>
       <section class="side-nav-container">
+        <!-- change thse from buttons to an unordered list; current <p>s will be higher outline order than buttons; buttons will be links -->
         <p>Main</p>
         <div class="side-buttons-container">
           <button>HOME</button>
@@ -57,36 +61,36 @@
     <main>
       <header>
         <nav class="top-nav">
-          <button class="top-nav-button">icon, menu expander</button>
-          <input type="search" placeholder="Search for a job, task, or resume">
-          <button class="top-nav-button">icon, add person?</button>
-          <button class="top-nav-button">icon, calendar</button>
-          <button class="top-nav-button">icon, squares</button>
+          <button class="top-nav-option top-nav-button">icon, menu expander</button>
+          <input class="top-nav-option" type="search" placeholder="Search for a job, task, or resume">
+          <button class="top-nav-option top-nav-button">icon, add person?</button>
+          <button class="top-nav-option top-nav-button">icon, calendar</button>
+          <button class="top-nav-option top-nav-button">icon, squares</button>
         </nav>
         <div class="main-header-container">
           <div class="main-header-info">
             <h1>Customer Service Representative</h1>
             <div class="main-header-sub-info">
               <p>San Francisco, CA</p>
-              <a href="none">link here</a>
+              <a href="none" class="preview">link here</a>
             </div>
           </div>
           <div class="main-header-buttons">
-            <button>button, open/closed</button>
-            <button>icon, bookmark</button>
-            <button>icon, edit</button>
-            <button>icon, delete</button>
+            <button class="main-header-button">button, open/closed</button>
+            <button class="main-header-button">icon, bookmark</button>
+            <button class="main-header-button">icon, edit</button>
+            <button class="main-header-button">icon, delete</button>
           </div>
         </div>
         <nav>
           <ul class="main-nav">
-            <li>SUMMARY</li>
-            <li>APPLICANTS</li>
-            <li>JOB BOARD</li>
-            <li>INTERVIEWS</li>
-            <li>ACTIVITY</li>
-            <li>BROADCAST</li>
-            <li>NOTIFICATIONS</li>
+            <li class="main-nav-option">SUMMARY</li>
+            <li class="main-nav-option">APPLICANTS</li>
+            <li class="main-nav-option">JOB BOARD</li>
+            <li class="main-nav-option">INTERVIEWS</li>
+            <li class="main-nav-option">ACTIVITY</li>
+            <li class="main-nav-option">BROADCAST</li>
+            <li class="main-nav-option">NOTIFICATIONS</li>
           </ul>
         </nav>
       </header>
@@ -110,42 +114,63 @@
         </div>
         <div class="main-content-container">
           <section class="content">
-            <header class="content-header">
-              <h2>JOB DESCRIPTION</h2>
-              <button>EDIT</button>
+            <header class="content-header-container">
+                <h2 class="content-header-title">JOB DESCRIPTION</h2>
+                <button class="content-header-button">EDIT</button>
             </header>
             <div class="content-table">
               <section class="content-subsection">
                 <h3>POSITION TITLE</h3>
                 <p>Customer Service Representative</p>
               </section>
+              <div class="content-divider">
+                <!-- divider styling, intentionally empty -->
+              </div>
               <section class="content-subsection">
                 <h3>LOCATION</h3>
                 <p>San Francisco, CA</p>
               </section>
+                <div class="content-divider">
+                <!-- divider styling, intentionally empty -->
+              </div>
               <section class="content-subsection">
                 <h3>EMPLOYMENT TYPE</h3>
                 <p>Full-time</p>
               </section>
+                <div class="content-divider">
+                <!-- divider styling, intentionally empty -->
+              </div>
               <section class="content-subsection">
                 <h3>EXPERIENCE</h3>
                 <p>Mid-level</p>
               </section>
+                <div class="content-divider">
+                <!-- divider styling, intentionally empty -->
+              </div>
               <section class="content-subsection">
                 <h3>STATUS</h3>
                 <p>Open</p>
               </section>
+                <div class="content-divider">
+                <!-- divider styling, intentionally empty -->
+              </div>
               <section class="content-subsection">
                 <h3>DESCRIPTION</h3>
                 <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce stuomser service wait times while doing a backhand spring and eating a ham sandwich.</p>
               </section>
+                <div class="content-divider">
+                <!-- divider styling, intentionally empty -->
+              </div>
               <section class="content-subsection">
                 <h3>HIRING LEAD</h3>
-                <div class="person-container">
+                <span class="person-container">
                   <img src="tbd">
                   <p>Tom Tizzy</p>
-                </div>
+                </span>
               </section>
+                <div class="content-divider">
+                <!-- divider styling, intentionally empty -->
+              </div>
               <section class="content-subsection">
                 <h3>APPROVED SALARY</h3>
                 <p>$58,000</p>
@@ -154,9 +179,9 @@
           </section>
           <aside class="tools">
             <article class="social-media-container">
-              <button class="social-media-button"><img src="tbd">Post to Facebook</button>
-              <button class="social-media-button"><img src="tbd">Post to Facebook</button>
-              <button class="social-media-button"><img src="tbd">Post to Facebook</button>
+              <button class="social-media-button" id="facebook"><img src="tbd">Post to Facebook</button>
+              <button class="social-media-button" id="twitter"><img src="tbd">Tweet This Job</button>
+              <button class="social-media-button" id="linkedin"><img src="tbd">Post to LinkedIn</button>
             </article>
             <article class="link">
               <h2>icon, earth, Link to this Job</h2>

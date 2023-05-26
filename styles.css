@@ -1,23 +1,30 @@
 /* 
 COLORS
 white: #ffffff
-off-white: #edf2f6
-medium grey: #6f7e95
-dark grey: #354052
+off-white - content background: #edf2f6
+light-grey - highlights: #dce4ea
+light/medium grey - edit button #8897b1
+medium grey darker - content header: #6f7e95
+dark grey - sidebar & fonts: #3d495e;
+darkest grey - sidebar hover: #354052;
 
-checkbox red: #e0185f
-checkbox green: #12a489
-checkbox yellow: ##edda3b
-bright blue: #02abee
-facebook blue: #496ec0
-linkedin blue: #047fbd
+red: #e0185f
+yellow: ##edda3b
+green: #12a489
 teal: #4bb6c4
-top nav hover blue; #4bb6c4
+bright blue: #02abee
+linkedin blue: #047fbd
+facebook blue: #496ec0
 purple: #ab6aaa
- */
+*/
 
 * {
-  border: blue solid 2px;
+  /* border: blue solid 2px; */
+  font-family: Mukta
+}
+
+button {
+  cursor: pointer;
 }
 
 body,
@@ -25,9 +32,12 @@ body,
 .main-header-container,
 .main-header-info,
 .main-header-sub-info,
+.main-nav,
 .graphs-container,
 .main-content-container,
+.content-header-container,
 .content-subsection,
+.person-container,
 .social-media-container {
   display: flex;
 }
@@ -38,7 +48,90 @@ body,
   flex-direction: column;
 }
 
+body {
+  background-color: white;
+  color: #6f7e95;
+}
+
+.left-side {
+  background-color: #3d495e;
+  color: #dce4ea;
+}
+
+.top-nav-option,
+.main-header-button {
+  border: 2px solid #dce4ea;
+  background-color: #ffffff;
+  color: #6f7e95;
+}
+
+.top-nav-button:hover,
+.main-header-button:hover {
+  background-color: #02abee;
+  color: #ffffff;
+}
+
+.preview {
+  color: #02abee
+}
+
 .main-nav {
-  display: flex;
   list-style-type: none;
+}
+
+.main-nav-option:hover {
+  border-bottom: 2px solid #02abee;
+}
+
+.summary {
+  background-color: #edf2f6;
+}
+
+.content-header-container {
+  background-color: #6f7e95;
+}
+
+.content-header-title {
+  color: #edf2f6;
+}
+
+.content-header-button {
+  background-color: #8897b1;
+  color:#edf2f6;
+  border: 0;
+}
+
+.content-table {
+  background-color: #ffffff;
+}
+
+.content-divider {
+  height: 1px;
+  width: 90%;
+  background-color: #dce4ea;
+}
+
+.tools {
+  color: #6f7e95;
+}
+
+.social-media-button {
+  border: 0;
+  color: #ffffff
+}
+
+#facebook {
+  background-color: #496ec0
+}
+
+#twitter {
+  background-color: #02abee
+}
+
+#linkedin {
+  background-color: #047fbd
+}
+
+.copy-link-button {
+  background-color: #4bb6c4
 }
