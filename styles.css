@@ -1,5 +1,30 @@
+/* 
+COLORS
+white: #ffffff
+off-white - content background: #edf2f6
+light-grey - highlights: #dce4ea
+light/medium grey - edit button #8897b1
+medium grey darker - content header: #6f7e95
+dark grey - sidebar & fonts: #3d495e;
+darkest grey - sidebar hover: #354052;
+
+red: #e0185f
+yellow: ##edda3b
+green: #12a489
+teal: #4bb6c4
+bright blue: #02abee
+linkedin blue: #047fbd
+facebook blue: #496ec0
+purple: #ab6aaa
+*/
+
 * {
-  border: blue solid 2px;
+  /* border: blue solid 2px; */
+  font-family: Mukta
+}
+
+button, input {
+  cursor: pointer;
 }
 
 body,
@@ -7,9 +32,12 @@ body,
 .main-header-container,
 .main-header-info,
 .main-header-sub-info,
+.main-nav,
 .graphs-container,
 .main-content-container,
+.content-header-container,
 .content-subsection,
+.person-container,
 .social-media-container {
   display: flex;
 }
@@ -20,7 +48,112 @@ body,
   flex-direction: column;
 }
 
-.main-nav {
-  display: flex;
+body {
+  background-color: white;
+  color: #6f7e95;
+}
+
+ul, li {
   list-style-type: none;
+}
+
+.left-side {
+  background-color: #3d495e;
+  color: #dce4ea;
+}
+
+.side-nav {
+  padding: 0;
+}
+
+.side-nav-sections {
+  border-top: 2px solid #354052;
+}
+
+.side-options-container {
+  padding-left: 0;
+}
+
+.side-link:link {
+  color: #dce4ea;
+  text-decoration: none;
+}
+
+.side-link:hover {
+  color: #ffffff;
+  background-color: #354052;
+}
+
+.top-nav-option,
+.main-header-button {
+  border: 2px solid #dce4ea;
+  background-color: #ffffff;
+  color: #6f7e95;
+}
+
+.top-nav-button:hover,
+.main-header-button:hover {
+  background-color: #02abee;
+  color: #ffffff;
+}
+
+.preview {
+  color: #02abee
+}
+
+.main-nav-option:hover {
+  border-bottom: 2px solid #02abee;
+}
+
+.summary {
+  background-color: #edf2f6;
+}
+
+.content-header-container {
+  background-color: #6f7e95;
+}
+
+.content-header-title {
+  color: #edf2f6;
+}
+
+.content-header-button {
+  background-color: #8897b1;
+  color:#edf2f6;
+  border: 0;
+}
+
+.content-table {
+  background-color: #ffffff;
+}
+
+.content-divider {
+  height: 1px;
+  width: 90%;
+  background-color: #dce4ea;
+}
+
+.tools {
+  color: #6f7e95;
+}
+
+.social-media-button {
+  border: 0;
+  color: #ffffff
+}
+
+#facebook {
+  background-color: #496ec0
+}
+
+#twitter {
+  background-color: #02abee
+}
+
+#linkedin {
+  background-color: #047fbd
+}
+
+.copy-link-button {
+  background-color: #4bb6c4
 }
