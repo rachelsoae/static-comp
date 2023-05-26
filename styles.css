@@ -23,7 +23,7 @@ purple: #ab6aaa
   font-family: Mukta
 }
 
-button {
+button, input {
   cursor: pointer;
 }
 
@@ -53,6 +53,10 @@ body {
   color: #6f7e95;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 .left-side {
   background-color: #3d495e;
   color: #dce4ea;
@@ -70,6 +74,16 @@ body {
   padding-left: 0;
 }
 
+.side-link:link {
+  color: #dce4ea;
+  text-decoration: none;
+}
+
+.side-link:hover {
+  color: #ffffff;
+  background-color: #354052;
+}
+
 .top-nav-option,
 .main-header-button {
   border: 2px solid #dce4ea;
@@ -85,10 +99,6 @@ body {
 
 .preview {
   color: #02abee
-}
-
-ul, li {
-  list-style-type: none;
 }
 
 .main-nav-option:hover {
