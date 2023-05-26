@@ -15,48 +15,46 @@
         <img class="user-img" src="tbd">
         <p class="user-name">Newton Barley</p>
       </section>
-      <section class="side-nav-container">
-        <!-- change thse from buttons to an unordered list; current <p>s will be higher outline order than buttons; buttons will be links -->
-        <p>Main</p>
-        <div class="side-buttons-container">
-          <button>HOME</button>
-          <button>JOBS</button>
-          <button>RESUMES</button>
-          <button>TASKS</button>
-          <button>CALENDAR</button>
-        </div>
-      </section>
-      <section class="side-nav-container">
-        <p>Admin</p>
-        <div class="side-buttons-container">
-          <button>USERS</button>
-          <button>LOCATIONS</button>
-          <button>WORKFLOWS</button>
-          <button>JOB BOARDS</button>
-          <button>SOCIAL</button>
-        </div>
-      </section>
-      <section class="side-nav-container">
-        <p>Categories</p>
-        <div class="side-checkbox-container">
-          <div class="checkbox">
-            <input type="checkbox" name="admin-category">
-            <label for="admin-category">Administrative</label>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" name="design-category">
-            <label for="design-category">Design</label>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" name="exec-category">
-            <label for="exec-category">Executive</label>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" name="hr-category">
-            <label for="hr-category">Human Resources</label>
-          </div>
-        </div>
-      </section>
+      <ul class="side-nav">
+        <li class="side-nav-sections">Main
+          <ul class="side-options-container">
+            <li>HOME</li>
+            <li>JOBS</li>
+            <li>RESUMES</li>
+            <li>TASKS</li>
+            <li>CALENDAR</li>
+          </ul>
+        </li> 
+        <li class="side-nav-sections">Admin
+          <ul class="side-options-container">
+            <li>USERS</li>
+            <li>LOCATIONS</li>
+            <li>WORKFLOWS</li>
+            <li>JOB BOARDS</li>
+            <li>SOCIAL</li>
+          </ul>
+        </li> 
+        <li class="side-nav-sections">Categories
+          <ul class="side-options-container">
+            <li class="checkbox">
+              <input type="checkbox" name="admin-category">
+              <label for="admin-category">Administrative</label>
+            </li>
+            <li class="checkbox">
+              <input type="checkbox" name="design-category">
+              <label for="design-category">Design</label>
+            </li>
+            <li class="checkbox">
+              <input type="checkbox" name="exec-category">
+              <label for="exec-category">Executive</label>
+            </li>
+            <li class="checkbox">
+              <input type="checkbox" name="hr-category">
+              <label for="hr-category">Human Resources</label>
+            </li>
+          </ul> 
+        </li>
+      </ul>
     </nav>
     <main>
       <header>
