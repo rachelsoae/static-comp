@@ -32,6 +32,7 @@ button, input {
 }
 
 body,
+.material-icons-round,
 .user,
 .side-link,
 .top-nav,
@@ -43,6 +44,9 @@ body,
 .main-nav,
 .graphs-container,
 .main-content-container,
+.main-header-buttons,
+.main-header-button,
+.material-icons-round.md-18.main-header-button,
 .summary,
 .summary-divider,
 .divider-line-flex,
@@ -212,20 +216,54 @@ h1 {
   width: 65%;
 }
 
-.main-header-button {
-  border: 2px solid #dce4ea;
-}
-
-.main-nav-option:hover {
-  border-bottom: 2px solid #02abee;
-}
-
 .preview {
   color: #02abee;
 }
 
 .preview:link {
   text-decoration: none;
+}
+
+.preview:hover {
+  text-decoration: underline;
+}
+
+.main-header-buttons {
+  width: 25%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-header-button {
+  border: 2px solid #dce4ea;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-icons-round.md-18 {
+  font-size: 24px;
+}
+
+.material-icons-round.md-18.status-button {
+  color: #3ec76c;
+  font-size: 1.5rem;
+}
+
+.status {
+  width: 75px;
+}
+
+.status-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-left: 2px;
+}
+
+.main-nav-option:hover {
+  border-bottom: 2px solid #02abee;
 }
 
 .summary {
