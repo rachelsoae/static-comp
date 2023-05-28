@@ -40,6 +40,9 @@ body,
 .main-nav,
 .graphs-container,
 .main-content-container,
+.summary,
+.summary-divider,
+.divider-line-flex,
 .content-header-container,
 .content-subsection,
 .person-container,
@@ -50,6 +53,7 @@ body,
 .user,
 .side-buttons-container,
 .main-header-info,
+.summary,
 .social-media-container {
   flex-direction: column;
 }
@@ -63,10 +67,12 @@ ul, li {
   list-style-type: none;
 }
 
+/* Left Side Navigation Menu */
+
 .left-side {
   background-color: #3d495e;
   color: #8897b1;
-  width: 15%;
+  width: 10%;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -74,6 +80,8 @@ ul, li {
 .user {
   display: flex;
   align-items: center;
+  color: #aebcd3;
+  font-weight: 400;
 }
 
 .side-nav {
@@ -110,6 +118,8 @@ label,
   background-color: #354052;
 }
 
+/* Main Section */
+
 main {
   width: 85%;
 }
@@ -137,6 +147,50 @@ main {
 
 .summary {
   background-color: #edf2f6;
+  padding: 3em;
+  align-items: center;
+}
+
+.graphs-container {
+  justify-content: space-around;
+}
+
+.summary-divider {
+  width: 100%;
+  margin: 3em;
+}
+
+.divider-line-flex {
+  width: 50%;
+  align-items: center;
+}
+
+.divider-line {
+  background-color: #dce4ea;
+  height: 2px;
+  width: 100%;
+}
+
+.divider-button {
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #8897b1;
+  border: 1px solid #dce4ea;
+  font-size: 1.5rem;
+  padding: 0;
+  width: 1.75em;
+  margin: 3px;
+}
+
+.main-content-container {
+  justify-content: space-between;
+  margin: 2em;
+}
+
+/* Job Description Box (Left Side) */
+
+.content {
+  width: 60%;
 }
 
 .content-header-container {
@@ -163,8 +217,11 @@ main {
   background-color: #dce4ea;
 }
 
+/* Tools Box (Right Side) */
+
 .tools {
   color: #6f7e95;
+  width: 30%;
 }
 
 .social-media-button {
