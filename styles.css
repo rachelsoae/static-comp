@@ -23,11 +23,16 @@ purple: #ab6aaa
   font-family: Mukta
 }
 
+html {
+  font-size: 62.5%
+}
+
 button, input {
   cursor: pointer;
 }
 
 body,
+.user,
 .side-buttons-container,
 .main-header-container,
 .main-header-info,
@@ -42,6 +47,7 @@ body,
   display: flex;
 }
 
+.user,
 .side-buttons-container,
 .main-header-info,
 .social-media-container {
@@ -59,29 +65,53 @@ ul, li {
 
 .left-side {
   background-color: #3d495e;
-  color: #dce4ea;
+  color: #8897b1;
+  width: 15%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.user {
+  display: flex;
+  align-items: center;
 }
 
 .side-nav {
   padding: 0;
 }
 
-.side-nav-sections {
+.side-nav-container {
+  width: 100%;
   border-top: 2px solid #354052;
 }
 
-.side-options-container {
-  padding-left: 0;
+.side-nav-sections {
+  padding: 1em;
+  font-size: 1.25rem;
 }
 
+.side-options-container {
+  padding: 0;
+}
+
+.side-link {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+label,
 .side-link:link {
-  color: #dce4ea;
+  color: #aebcd3;
   text-decoration: none;
 }
 
 .side-link:hover {
-  color: #ffffff;
+  color: #dce4ea;
   background-color: #354052;
+}
+
+main {
+  width: 85%;
 }
 
 .top-nav-option,
@@ -114,7 +144,7 @@ ul, li {
 }
 
 .content-header-title {
-  color: #edf2f6;
+  color: #dce4ea;
 }
 
 .content-header-button {
