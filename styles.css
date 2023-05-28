@@ -19,7 +19,6 @@ purple: #ab6aaa
 */
 
 * {
-  /* border: blue solid 2px; */
   font-family: Mukta
 }
 
@@ -136,6 +135,7 @@ main {
 
 .top-nav {
   align-items: center;
+  border-bottom: 2px solid #dce4ea;
 }
 
 .top-nav-menu-flex {
@@ -165,6 +165,8 @@ main {
 .top-nav-search {
   width: 100%;
   border: none;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 /* .top-nav-search:focus {
@@ -187,31 +189,54 @@ main {
   color: #ffffff;
 }
 
-.main-header-button {
-  border: 2px solid #dce4ea;
+.main-header-container {
+  justify-content: space-between;
+  margin: 3em;
 }
 
-.preview {
-  color: #02abee
+.main-header-info {
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color:#3d495e;
+  margin: 0;
+}
+
+.main-header-sub-info {
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5em;
+  width: 65%;
+}
+
+.main-header-button {
+  border: 2px solid #dce4ea;
 }
 
 .main-nav-option:hover {
   border-bottom: 2px solid #02abee;
 }
 
-.main-header-container,
-.summary {
-  border-top: 2px solid #dce4ea;
+.preview {
+  color: #02abee;
+}
+
+.preview:link {
+  text-decoration: none;
 }
 
 .summary {
   background-color: #edf2f6;
   padding: 3em;
+  border-top: 2px solid #dce4ea;
   align-items: center;
 }
 
 .graphs-container {
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .summary-divider {
@@ -240,10 +265,10 @@ main {
 
 .main-content-container {
   justify-content: space-between;
-  margin: 2em;
+  margin: 0;
 }
 
-/* Job Description Box (Left Side) */
+/* Job Description Box */
 
 .content {
   width: 60%;
@@ -273,7 +298,7 @@ main {
   background-color: #dce4ea;
 }
 
-/* Tools Box (Right Side) */
+/* Tools Box */
 
 .tools {
   color: #6f7e95;
