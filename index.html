@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">    
     <title>Rachel's Static Comp</title>
   </head>
   <body>
@@ -19,22 +21,72 @@
         <div class="side-nav-container">
           <li class="side-nav-sections">Main
             <ul class="side-options-container">
-              <li class="side-option"><a class="side-link" href="fakelink">HOME</a></li>
-              <li><a class="side-link" href="fakelink">JOBS</a></li>
-              <li><a class="side-link" href="fakelink">RESUMES</a></li>
-              <li><a class="side-link" href="fakelink">TASKS</a></li>
-              <li><a class="side-link" href="fakelink">CALENDAR</a></li>
+              <li class="side-link-flex">
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">home</span> 
+                  <span class="side-link-label">HOME</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">business_center</span>
+                  <span class="side-link-label">JOBS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">description</span>
+                  <span class="side-link-label">RESUMES</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">assignment_turned_in</span>
+                  <span class="side-link-label">TASKS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">event</span>
+                  <span class="side-link-label">CALENDAR</span>
+                </a>
+              </li>
             </ul>
           </li> 
         </div>
         <div class="side-nav-container">
           <li class="side-nav-sections">Admin
             <ul class="side-options-container">
-              <li><a class="side-link" href="fakelink">USERS</a></li>
-              <li><a class="side-link" href="fakelink">LOCATIONS</a></li>
-              <li><a class="side-link" href="fakelink">WORKFLOWS</a></li>
-              <li><a class="side-link" href="fakelink">JOB BOARDS</a></li>
-              <li><a class="side-link" href="fakelink">SOCIAL</a></li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">people</span>
+                  <span class="side-link-label">USERS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">place</span>
+                  <span class="side-link-label">LOCATIONS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">lan</span>
+                  <span class="side-link-label">WORKFLOWS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">newspaper</span>
+                  <span class="side-link-label">JOB BOARDS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">forum</span>
+                  <span class="side-link-label">SOCIAL</span>
+                </a>
+              </li>
             </ul>
           </li> 
         </div>
@@ -65,11 +117,29 @@
     <main>
       <header>
         <nav class="top-nav">
-          <button class="top-nav-option top-nav-button">icon, menu expander</button>
-          <input class="top-nav-option" type="search" placeholder="Search for a job, task, or resume">
-          <button class="top-nav-option top-nav-button">icon, add person?</button>
-          <button class="top-nav-option top-nav-button">icon, calendar</button>
-          <button class="top-nav-option top-nav-button">icon, squares</button>
+          <span class="top-nav-option top-nav-button top-nav-menu-flex">
+            <span class="material-icons-round md-24 icon-arrow-left">
+              arrow_left
+            </span>
+            <span class="material-icons-round md-24 icon-menu">
+              menu
+            </span>
+          </span>
+          <span class="top-nav-option top-nav-search-flex">
+            <span class="material-icons-round md-24">
+              search
+            </span>
+            <input class="top-nav-search" type="search" placeholder="Search for a job, task, or resume">
+          </span>
+          <span class="material-icons-round md-24 top-nav-option top-nav-button">
+            person_add
+          </span>
+          <span class="material-icons-round md-24 top-nav-option top-nav-button">
+            event_note
+          </span>
+          <span class="material-icons-round md-24 top-nav-option top-nav-button">
+            apps
+          </span>
         </nav>
         <div class="main-header-container">
           <div class="main-header-info">
@@ -117,8 +187,7 @@
           <span class="divider-line-flex">
             <span class="divider-line"></span>
           </span>
-          <!-- insert icon instead of typed fig -->
-          <button class="divider-button">^</button>
+          <span class="material-icons-round divider-icon">expand_less</span>
           <span class="divider-line-flex">
             <span class="divider-line"></span>
           </span>
