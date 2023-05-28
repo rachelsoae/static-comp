@@ -262,8 +262,26 @@ h1 {
   padding-left: 2px;
 }
 
+* {
+  /* border: 1px blue solid; */
+}
+
+.main-nav {
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: space-between;
+  margin: 0;
+  width: 75%;
+}
+
+.main-nav-option {
+  padding-bottom: 1em;
+  border-bottom: 4px solid #ffffff;
+}
+
 .main-nav-option:hover {
-  border-bottom: 2px solid #02abee;
+  border-bottom: 4px solid #02abee;
+  color: #354052;
 }
 
 .summary {
