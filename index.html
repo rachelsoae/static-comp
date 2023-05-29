@@ -94,20 +94,20 @@
           <li class="side-nav-sections">Categories
             <ul class="side-options-container">
               <li class="checkbox">
-                <input type="checkbox" name="admin-category">
-                <label for="admin-category">Administrative</label>
+                <input class="checkbox" type="checkbox" name="admin-category">
+                <label class="checkbox" for="admin-category">Administrative</label>
               </li>
               <li class="checkbox">
-                <input type="checkbox" name="design-category">
-                <label for="design-category">Design</label>
+                <input class="checkbox" type="checkbox" name="design-category">
+                <label class="checkbox" for="design-category">Design</label>
               </li>
               <li class="checkbox">
-                <input type="checkbox" name="exec-category">
-                <label for="exec-category">Executive</label>
+                <input class="checkbox" type="checkbox" name="exec-category">
+                <label class="checkbox" for="exec-category">Executive</label>
               </li>
               <li class="checkbox">
-                <input type="checkbox" name="hr-category">
-                <label for="hr-category">Human Resources</label>
+                <input class="checkbox" type="checkbox" name="hr-category">
+                <label class="checkbox" for="hr-category">Human Resources</label>
               </li>
             </ul> 
           </li>
@@ -117,29 +117,35 @@
     <main>
       <header>
         <nav class="top-nav">
-          <span class="top-nav-option top-nav-button top-nav-menu-flex">
+          <button class="top-nav-button top-nav-menu-container">
             <span class="material-icons-round md-24 icon-arrow-left">
               arrow_left
             </span>
             <span class="material-icons-round md-24 icon-menu">
               menu
             </span>
-          </span>
-          <span class="top-nav-option top-nav-search-flex">
-            <span class="material-icons-round md-24">
+          </button>
+          <span class="top-nav-search-container">
+            <span class="material-icons-round md-24 icon-search">
               search
             </span>
             <input class="top-nav-search" type="search" placeholder="Search for a job, task, or resume">
           </span>
-          <span class="material-icons-round md-24 top-nav-option top-nav-button">
-            person_add
-          </span>
-          <span class="material-icons-round md-24 top-nav-option top-nav-button">
-            event_note
-          </span>
-          <span class="material-icons-round md-24 top-nav-option top-nav-button">
-            apps
-          </span>
+          <button class=" top-nav-button">
+            <span class="material-icons-round md-24">
+              person_add
+            </span>
+          </button>
+          <button class="top-nav-button">
+            <span class="material-icons-round md-24">
+              event_note
+            </span>
+          </button>
+          <button class="top-nav-button">
+            <span class="material-icons-round md-24 ">
+              apps
+            </span>
+          </button>
         </nav>
         <div class="main-header-container">
           <div class="main-header-info">
@@ -153,18 +159,18 @@
           </div>
           <section class="main-header-buttons">
             <span class="main-header-button status">
-              <span class="material-icons-round md-18 status-button">
+              <span class="material-icons-round md-24 status-button">
                 fiber_manual_record
               </span>
               <span class="status-label">OPEN</span>
             </span>
-            <span class="material-icons-round md-18 main-header-button">
+            <span class="material-icons-round md-24 main-header-button">
               bookmark
             </span>
-            <span class="material-icons-round md-18 main-header-button">
+            <span class="material-icons-round md-24 main-header-button">
               edit
             </span>
-            <span class="material-icons-round md-18 main-header-button">
+            <span class="material-icons-round md-24 main-header-button">
               delete
             </span>
           </section>
@@ -183,17 +189,17 @@
       </header>
       <section class="summary">
         <div class="graphs-container">
-          <div class="figure-1">
+          <div class="figure">
             <figure>
               graph 1 here
             </figure>
-            <figcaption>TOTALS - Out of # views</figcaption>
+            <figcaption id="caption1">TOTALS &#x2022 Out of # views</figcaption>
           </div>
-          <div class="figure-2">
+          <div class="figure">
             <figure>
-              graph 1 here
+              graph 2 here
             </figure>
-            <figcaption>APPLICANTS/DAY</figcaption>
+            <figcaption id="caption2">APPLICANTS/DAY</figcaption>
           </div>
         </div>
         <div class="summary-divider">
@@ -209,7 +215,12 @@
           <section class="content">
             <header class="content-header-container">
                 <h2 class="content-header-title">JOB DESCRIPTION</h2>
-                <button class="content-header-button">EDIT</button>
+                <button class="content-header-button">
+                  <span class="material-icons-round">
+                    edit
+                  </span>
+                  EDIT
+                </button>
             </header>
             <div class="content-table">
               <section class="content-subsection">
