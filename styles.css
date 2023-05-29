@@ -55,8 +55,9 @@ body,
 .figure,
 figcaption,
 .summary-divider,
-.divider-line-flex,
+.divider-line-container,
 .content-header-container,
+.content-header-button,
 .content-subsection,
 .person-container,
 .social-media-container {
@@ -293,7 +294,7 @@ figcaption {
 
 .summary {
   background-color: #edf2f6;
-  padding: 3em;
+  padding: 8em;
   border-top: 2px solid #dce4ea;
   align-items: center;
 }
@@ -331,7 +332,7 @@ figcaption {
   margin: 3em;
 }
 
-.divider-line-flex {
+.divider-line-container {
   width: 50%;
   align-items: center;
 }
@@ -363,26 +364,82 @@ figcaption {
 
 .content-header-container {
   background-color: #6f7e95;
+  align-items: center;
+  height: 10%;
+  padding: 0 3em;
+}
+
+.content-header-title,
+.content-header-button {
+  font-weight: 600;
 }
 
 .content-header-title {
-  color: #dce4ea;
+  color: #ffffff;
+  font-size: 1.8rem;
 }
 
 .content-header-button {
   background-color: #8897b1;
   color:#edf2f6;
   border: 0;
+  height: 50%;
+  align-items: center;
+  padding: 0 1em;
+  margin: 1.5em;
+  font-size: 1.6rem;
+}
+
+.material-icons-round.md-18 {
+  font-size: 18px;
 }
 
 .content-table {
   background-color: #ffffff;
+  height: 90%;
 }
 
 .content-divider {
   height: 1px;
   width: 90%;
   background-color: #dce4ea;
+}
+
+.content-subsection {
+  padding: 1em 3em;
+}
+
+h3 {
+  width: 30%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content-paragraph {
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+* {
+  /* border: 1px blue solid; */
+}
+
+.person-container {
+  width: 50%;
+  align-items: center;
+}
+
+.person-name {
+  padding-left: 1em;
+}
+
+.salary-container {
+  padding-bottom: 3em;
+}
+
+.salary {
+  font-weight: 600;
 }
 
 /* Tools Box */
