@@ -14,9 +14,11 @@ Given a design composite, created a static replica of design utilizing only HTML
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 Current product as of 5/28/23:
+
 ![end product as of 5/28/23](https://imgur.com/JA84xZM.png)
 
 Given spec:
+
 ![given spec](https://imgur.com/Kw9rTbx.png)
 
 ### Context:
