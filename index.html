@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">    
     <title>Rachel's Static Comp</title>
   </head>
   <body>
@@ -16,69 +18,162 @@
         <p class="user-name">Newton Barley</p>
       </section>
       <ul class="side-nav">
-        <li class="side-nav-sections">Main
-          <ul class="side-options-container">
-            <li class="side-option"><a class="side-link" href="fakelink">HOME</a></li>
-            <li><a class="side-link" href="fakelink">JOBS</a></li>
-            <li><a class="side-link" href="fakelink">RESUMES</a></li>
-            <li><a class="side-link" href="fakelink">TASKS</a></li>
-            <li><a class="side-link" href="fakelink">CALENDAR</a></li>
-          </ul>
-        </li> 
-        <li class="side-nav-sections">Admin
-          <ul class="side-options-container">
-            <li><a class="side-link" href="fakelink">USERS</a></li>
-            <li><a class="side-link" href="fakelink">LOCATIONS</a></li>
-            <li><a class="side-link" href="fakelink">WORKFLOWS</a></li>
-            <li><a class="side-link" href="fakelink">JOB BOARDS</a></li>
-            <li><a class="side-link" href="fakelink">SOCIAL</a></li>
-          </ul>
-        </li> 
-        <li class="side-nav-sections">Categories
-          <ul class="side-options-container">
-            <li class="checkbox">
-              <input type="checkbox" name="admin-category">
-              <label for="admin-category">Administrative</label>
-            </li>
-            <li class="checkbox">
-              <input type="checkbox" name="design-category">
-              <label for="design-category">Design</label>
-            </li>
-            <li class="checkbox">
-              <input type="checkbox" name="exec-category">
-              <label for="exec-category">Executive</label>
-            </li>
-            <li class="checkbox">
-              <input type="checkbox" name="hr-category">
-              <label for="hr-category">Human Resources</label>
-            </li>
-          </ul> 
-        </li>
+        <div class="side-nav-container">
+          <li class="side-nav-sections">Main
+            <ul class="side-options-container">
+              <li class="side-link-flex">
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">home</span> 
+                  <span class="side-link-label">HOME</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">business_center</span>
+                  <span class="side-link-label">JOBS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">description</span>
+                  <span class="side-link-label">RESUMES</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">assignment_turned_in</span>
+                  <span class="side-link-label">TASKS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">event</span>
+                  <span class="side-link-label">CALENDAR</span>
+                </a>
+              </li>
+            </ul>
+          </li> 
+        </div>
+        <div class="side-nav-container">
+          <li class="side-nav-sections">Admin
+            <ul class="side-options-container">
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">people</span>
+                  <span class="side-link-label">USERS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">place</span>
+                  <span class="side-link-label">LOCATIONS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">lan</span>
+                  <span class="side-link-label">WORKFLOWS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">newspaper</span>
+                  <span class="side-link-label">JOB BOARDS</span>
+                </a>
+              </li>
+              <li>
+                <a class="side-link" href="fakelink">
+                  <span class="material-icons-round">forum</span>
+                  <span class="side-link-label">SOCIAL</span>
+                </a>
+              </li>
+            </ul>
+          </li> 
+        </div>
+        <div class="side-nav-container">
+          <li class="side-nav-sections">Categories
+            <ul class="side-options-container">
+              <li class="checkbox">
+                <input class="checkbox" type="checkbox" name="admin-category">
+                <label class="checkbox" for="admin-category">Administrative</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox" type="checkbox" name="design-category">
+                <label class="checkbox" for="design-category">Design</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox" type="checkbox" name="exec-category">
+                <label class="checkbox" for="exec-category">Executive</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox" type="checkbox" name="hr-category">
+                <label class="checkbox" for="hr-category">Human Resources</label>
+              </li>
+            </ul> 
+          </li>
+        </div>        
       </ul>
     </nav>
     <main>
       <header>
         <nav class="top-nav">
-          <button class="top-nav-option top-nav-button">icon, menu expander</button>
-          <input class="top-nav-option" type="search" placeholder="Search for a job, task, or resume">
-          <button class="top-nav-option top-nav-button">icon, add person?</button>
-          <button class="top-nav-option top-nav-button">icon, calendar</button>
-          <button class="top-nav-option top-nav-button">icon, squares</button>
+          <button class="top-nav-button top-nav-menu-container">
+            <span class="material-icons-round md-24 icon-arrow-left">
+              arrow_left
+            </span>
+            <span class="material-icons-round md-24 icon-menu">
+              menu
+            </span>
+          </button>
+          <span class="top-nav-search-container">
+            <span class="material-icons-round md-24 icon-search">
+              search
+            </span>
+            <input class="top-nav-search" type="search" placeholder="Search for a job, task, or resume">
+          </span>
+          <button class=" top-nav-button">
+            <span class="material-icons-round md-24">
+              person_add
+            </span>
+          </button>
+          <button class="top-nav-button">
+            <span class="material-icons-round md-24">
+              event_note
+            </span>
+          </button>
+          <button class="top-nav-button">
+            <span class="material-icons-round md-24 ">
+              apps
+            </span>
+          </button>
         </nav>
         <div class="main-header-container">
           <div class="main-header-info">
             <h1>Customer Service Representative</h1>
             <div class="main-header-sub-info">
-              <p>San Francisco, CA</p>
-              <a href="none" class="preview">link here</a>
+              <span class="material-icons-round">place</span>
+              <span>San Francisco, CA</span>
+              <span>&#x2022</span>
+              <a href="fakelink" class="preview">Preview this post</a>
             </div>
           </div>
-          <div class="main-header-buttons">
-            <button class="main-header-button">button, open/closed</button>
-            <button class="main-header-button">icon, bookmark</button>
-            <button class="main-header-button">icon, edit</button>
-            <button class="main-header-button">icon, delete</button>
-          </div>
+          <section class="main-header-buttons">
+            <span class="main-header-button status">
+              <span class="material-icons-round md-24 status-button">
+                fiber_manual_record
+              </span>
+              <span class="status-label">OPEN</span>
+            </span>
+            <span class="material-icons-round md-24 main-header-button">
+              bookmark
+            </span>
+            <span class="material-icons-round md-24 main-header-button">
+              edit
+            </span>
+            <span class="material-icons-round md-24 main-header-button">
+              delete
+            </span>
+          </section>
         </div>
         <nav>
           <ul class="main-nav">
@@ -94,67 +189,78 @@
       </header>
       <section class="summary">
         <div class="graphs-container">
-          <div class="figure-1">
+          <div class="figure">
             <figure>
               graph 1 here
             </figure>
-            <figcaption>TOTALS - Out of # views</figcaption>
+            <figcaption id="caption1">TOTALS &#x2022 Out of # views</figcaption>
           </div>
-          <div class="figure-2">
+          <div class="figure">
             <figure>
-              graph 1 here
+              graph 2 here
             </figure>
-            <figcaption>APPLICANTS/DAY</figcaption>
+            <figcaption id="caption2">APPLICANTS/DAY</figcaption>
           </div>
         </div>
-        <div>
-          divider expander
+        <div class="summary-divider">
+          <span class="divider-line-container">
+            <span class="divider-line"></span>
+          </span>
+          <span class="material-icons-round divider-icon">expand_less</span>
+          <span class="divider-line-container">
+            <span class="divider-line"></span>
+          </span>
         </div>
         <div class="main-content-container">
           <section class="content">
             <header class="content-header-container">
                 <h2 class="content-header-title">JOB DESCRIPTION</h2>
-                <button class="content-header-button">EDIT</button>
+                <button class="content-header-button">
+                  <span class="material-icons-round md-18">
+                    edit
+                  </span>
+                  EDIT
+                </button>
             </header>
             <div class="content-table">
               <section class="content-subsection">
                 <h3>POSITION TITLE</h3>
-                <p>Customer Service Representative</p>
+                <p class="content-paragraph">Customer Service Representative</p>
               </section>
               <div class="content-divider">
                 <!-- divider styling, intentionally empty -->
               </div>
               <section class="content-subsection">
                 <h3>LOCATION</h3>
-                <p>San Francisco, CA</p>
+                <p class="content-paragraph">San Francisco, CA</p>
               </section>
                 <div class="content-divider">
                 <!-- divider styling, intentionally empty -->
               </div>
               <section class="content-subsection">
                 <h3>EMPLOYMENT TYPE</h3>
-                <p>Full-time</p>
+                <p class="content-paragraph">Full-time</p>
               </section>
                 <div class="content-divider">
                 <!-- divider styling, intentionally empty -->
               </div>
               <section class="content-subsection">
                 <h3>EXPERIENCE</h3>
-                <p>Mid-level</p>
+                <p class="content-paragraph">Mid-level</p>
               </section>
                 <div class="content-divider">
                 <!-- divider styling, intentionally empty -->
               </div>
               <section class="content-subsection">
                 <h3>STATUS</h3>
-                <p>Open</p>
+                <p class="content-paragraph">Open</p>
               </section>
                 <div class="content-divider">
                 <!-- divider styling, intentionally empty -->
               </div>
               <section class="content-subsection">
                 <h3>DESCRIPTION</h3>
-                <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce stuomser service wait times while doing a backhand spring and eating a ham sandwich.</p>
+                <p class="content-paragraph">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce stuomser service wait times while doing a backhand spring and eating a ham sandwich.</p>
               </section>
                 <div class="content-divider">
                 <!-- divider styling, intentionally empty -->
@@ -163,15 +269,15 @@
                 <h3>HIRING LEAD</h3>
                 <span class="person-container">
                   <img src="tbd">
-                  <p>Tom Tizzy</p>
+                  <p class="content-paragraph person-name">Tom Tizzy</p>
                 </span>
               </section>
                 <div class="content-divider">
                 <!-- divider styling, intentionally empty -->
               </div>
-              <section class="content-subsection">
+              <section class="content-subsection salary-container">
                 <h3>APPROVED SALARY</h3>
-                <p>$58,000</p>
+                <p class="content-paragraph salary">$58,000</p>
               </section>
             </div>
           </section>
